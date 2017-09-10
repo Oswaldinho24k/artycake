@@ -1,0 +1,34 @@
+.footer{
+    padding:3%;
+    background:#7F247F;
+    color:#FFF9FF;
+    text-align: center;
+
+}
+
+.footer .rsociales{
+    color:#7F247F;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+}
+.footer .rsociales a{
+    color:#FFF9FF;
+}
+.footer .rsociales a:hover{
+
+}
+.footer .links{
+    color:#7F247F;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .links a{
+    color:#FFF9FF;
+    font-size: 1.5rem;
+}

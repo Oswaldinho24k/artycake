@@ -1,20 +1,25 @@
-import React, { PropTypes } from 'react'
+import React from 'react';
+import './Home.css';
 
 const styles = {
     bgvid:{
         width:'100%',
         minWidth: '100%',
         minHeight: '100%',
-        width: 'auto',
+        maxWidth: '100%',
+        maxHeight: '100%',
+        zIndex:'-100',
         height: 'auto',
-        zIndex: '-1000'
+        boxSizing:'border-box'
     },
     onV:{
-      backgroundColor:'rgba(0,0,0,.5)',
+      backgroundColor:'rgba(0,0,0,.8)',
       width:'100%',
+      maxWidth: '100%',
+      maxHeight: '100%',
       minWidth: '100%',
       minHeight: '100%',
-      width: 'auto',
+
       height: 'auto',
       zIndex: '1'
     }
@@ -27,9 +32,10 @@ const Background = (props) => {
   return (
     <div>
       <div style={styles.onV}></div>
-      <video style={styles.bgvid} autoPlay loop muted>
+      <video className="video" style={styles.bgvid} autoPlay loop muted>
           <source src={bg} type="video/mp4" />
       </video>
+      <div className="imagebg"></div>
     </div>
   )
 }

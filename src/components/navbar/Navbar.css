@@ -1,0 +1,132 @@
+.navbar{
+  padding:5%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 15vh;
+  position:fixed;
+  z-index:10;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  transition: all .5s ease;
+}
+.navbar2{
+  background: #FFF9FF;
+  border-bottom: 1px solid #7F247F;
+  padding:2%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 8vh;
+  position:fixed;
+  z-index:10;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  transition: all .5s ease;
+}
+.navbar-resp {
+    display: none;
+    z-index:10;
+    position: fixed;
+    padding: 5%;
+    margin-left: -100%;
+    height: 30%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    transition: all .5s ease;
+}
+.menu{
+  text-shadow: 1px 1px rgba(0,0,0,.5);
+  color:#7F247F;
+  font-size: 1.3rem;
+  top:3%;
+  left:5%;
+  position:fixed;
+  z-index:11;
+  display: none;
+  transition: all .5s ease;
+}
+
+@media screen and (max-width: 480px) {
+
+    .navbar{
+      display: none;
+    }
+    .navbar2{
+      display: none;
+    }
+    .navbar-resp{
+      display: flex;
+    }
+
+    .menu{
+      display: block;
+    }
+    .logo2{
+      display: block;
+    }
+}
+.logo{
+  text-shadow: 1px 1px rgba(255,255,255,.5);
+  text-decoration: none;
+  color:#7F247F;
+  font-size: 3rem;
+}
+.logo2{
+  display: none;
+  text-shadow: 1px 1px rgba(255,255,255,.5);
+
+  text-decoration: none;
+  color:#7F247F;
+  font-size: 3rem;
+  position:absolute;
+  top: 3%;
+  right: 5%;
+}
+.logo:hover{
+  text-decoration: none;
+  font-size: 4rem;
+}
+.logo:focus{
+  text-decoration: none;
+}
+.logo:visited{
+  text-decoration: none;
+}
+.link{
+  text-shadow: 1px 1px rgba(255,255,255,.5);
+  text-decoration: none;
+  color:#7F247F;
+  font-size: 1.3rem;
+}
+.link:visited{
+  text-decoration: none;
+}
+.link:hover{
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.link:focus{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+
+    .navbar{
+      display: none;
+    }
+    .navbar2{
+      display: none;
+    }
+    .navbar-resp{
+      display: flex;
+    }
+
+    .menu{
+      display: block;
+    }
+    .logo2{
+      display: block;
+    }
+}
